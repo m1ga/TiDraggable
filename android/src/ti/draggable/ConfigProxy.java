@@ -65,7 +65,7 @@ public class ConfigProxy extends KrollProxy implements KrollProxyListener
 		properties.put("axis", config != null && config.containsKeyAndNotNull("axis") ? TiConvert.toString(config, "axis") : null);
 		properties.put("maps", config != null && config.containsKeyAndNotNull("maps") ? (Object[]) config.get("maps") : null);
 		properties.put("minLeft", config != null && config.containsKeyAndNotNull("minLeft") ? TiConvert.toTiDimension(config, "minLeft", TiDimension.TYPE_LEFT) : null);
-		properties.put("maxLeft", config != null && config.containsKeyAndNotNull("minLeft") ? TiConvert.toTiDimension(config, "maxLeft", TiDimension.TYPE_LEFT) : null);
+		properties.put("maxLeft", config != null && config.containsKeyAndNotNull("maxLeft") ? TiConvert.toTiDimension(config, "maxLeft", TiDimension.TYPE_LEFT) : null);
 		properties.put("minTop", config != null && config.containsKeyAndNotNull("minTop") ? TiConvert.toTiDimension(config, "minTop", TiDimension.TYPE_TOP) : null);
 		properties.put("maxTop", config != null && config.containsKeyAndNotNull("maxTop") ? TiConvert.toTiDimension(config, "maxTop", TiDimension.TYPE_TOP) : null);
 		properties.put("threshold", config != null && config.containsKeyAndNotNull("threshold") ? TiConvert.toInt(config, "threshold") : null);
